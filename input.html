@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+</head>
+
+<body>
+  <h3>Subscribe</h3>
+  <form action="index.html" method="post">
+    <label for="fullName">Full Name:</label> <br>
+    <input type="text" id="fullName" name="firstName" value="First Name" required>
+    <input type="text" id="fullName" name="middleName" value="Middle Name">
+    <input type="text" id="fullName" name="lastName" value="Last Name" required>
+    <table>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="Email" required></td>
+      </tr>
+      <tr>
+        <td><label for="phoneNumber">Phone No.:</label></td>
+        <td><input type="number" id="phoneNumber" name="phoneNumber" required></td>
+      </tr>
+      <tr>
+        <td><label for="DOB">Date of Birth:</label></td>
+        <td><input type="date" id="DOB" name="DOB" required></td>
+      </tr>
+    </table>
+
+    <label for="sex">Sex:</label>
+    <select name="sex" id="sex">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <br>
+
+    <label for="marital">Marital Status:</label>
+    <input type="radio" id="single" name="marital" value="single">
+    <label for="single">Single</label>
+    <input type="radio" id="married" name="marital"value="married">
+    <label for="married">Married</label>
+    <input type="radio" id="divorced" name="marital" value="divorced">
+    <label for="divorced">Divorced</label>
+    <input type="radio" id="widow" name="marital" value="widow">
+    <label for="widow">Widow</label>
+
+    <br>
+    <input type="checkbox" name="yes" id="yes">
+    <label for="yes">Subscribe to monthly newsletter.</label>
+    <br><input type="submit" name="subscribe" value="subscribe">
+  </form>
+
+  <h3><a href="index.html">Home</a></h3>
+</body>
+
+</html>
